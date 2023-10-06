@@ -2,8 +2,8 @@ package Q1Onlinestore;
 
 public class Items {
 	
-	private String item_name;
-	private double price;
+	String item_name;
+	 double price;
 
 	public double getPrice() {
 		return price;

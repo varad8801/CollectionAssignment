@@ -1,10 +1,9 @@
 package Q2Emp;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
+
 
 public class EmployeeManagement {
 	
@@ -34,7 +33,7 @@ public class EmployeeManagement {
 		
 		double TotalSal=0;
 		Iterator<Employee> iterator2=empList.iterator();
-		while (iterator2.hasNext()) {
+		while (iterator2.hasNext()){
 			Employee employee = (Employee) iterator2.next();
 			
 			if (dep.equalsIgnoreCase(employee.getDepartment())) {
