@@ -6,7 +6,7 @@ public class Order {
  int id;
 	 String customer_name; 
 	 List<Items>items; 
-	 int total_price;
+	 double total_price;
 	public int getId() {
 		return id;
 	}
@@ -25,18 +25,13 @@ public class Order {
 	public void setItems(List<Items> items) {
 		this.items = items;
 	}
-	public int getTotal_price() {
-		return total_price;
-	}
-	public void setTotal_price(int total_price) {
-		this.total_price = total_price;
-	}
+	
 	public Order(int id, String customer_name, List<Items> items) {
 		super();
 		this.id = id;
 		this.customer_name = customer_name;
 		this.items = items;
-		this.total_price = getTotal_price();
+		this.total_price = getTotalPrice();
 	}
 	public double getTotalPrice() {
         double totalPrice = 0.0;
